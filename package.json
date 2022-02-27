@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "@npmcli/git": "^3.0.0",
+    "child_process": "^1.0.2",
+    "dotenv": "^16.0.0",
+    "openai": "^2.0.4"
+  },
+  "scripts": {
+    "run": "node index.js",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": "^7.0.4"
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook",
+      "pre-commit": "echo \"[Husky] pre-commit\"",
+      "post-commit": "node post-commit.js"
+    }
+  }
+}
