@@ -6,12 +6,12 @@ const git = require('@npmcli/git')
 git.clone('https://github.com/Acorn221/OxfordHack2022_5am_translator.git', 'main', './ox').then(() => {
 	exec('cd ./ox && bash change.sh');
 }) // clone a repo
-
-/* 
 const configuration = new Configuration({
-  apiKey: process.env.OPENAI_KEY,
-});
-const openai = new OpenAIApi(configuration);
+    apiKey: process.env.OPENAI_KEY,
+  });
+  const openai = new OpenAIApi(configuration);
+/* 
+
 
 exports.handler = async (event, context) => {
     //console.log('Received event:', JSON.stringify(event, null, 2));
