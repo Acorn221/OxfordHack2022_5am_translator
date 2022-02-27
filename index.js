@@ -7,7 +7,7 @@ git.clone('https://github.com/Acorn221/OxfordHack2022_5am_translator.git', 'main
 	exec('cd ./ox && bash change.sh');
 }) // clone a repo
 
-/*
+/* 
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_KEY,
 });
